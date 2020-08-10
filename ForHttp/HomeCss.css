@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bodybackground{
+background-attachment: fixed; 
+background-image: url("image/caffee.jpg"); 
+background-repeat: no-repeat;
+background-position: 20% 20%; 
+
+}
+
+.bodyframe{
+color:white;
+font-family: arial;
+text-align: center;
+margin-top: 10%; 
+margin-bottom: 10%; 
+}
+
+
+.picture{
+border: 5px solid #ffffff;
+margin-left:5%; 
+margin-right:5%; 
+}
+
+.toppicture{
+  width: 1000px;
+  height: 300px;
+  top : -50px;
+  left: 17%;
+  /*text-align: center;*/
+  margin-bottom: 10px;
+
+}
+
+.p {
+  top : 0px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>骨架</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-git.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+	$('#playground').append("哈囉,\n");
+    $('#playground').append("世界!");
+	$('#playground').css("background","#ff8");
+    $('#playground').css("color","blue");
+    $('#playground').css("marginLeft",  100);
+    $('#playground').css("marginRight", 100);
+	
+	$('#playground').mouseenter(function () {
+		$(this).animate(
+			{
+				marginLeft:  20,
+				marginRight: 20,
+			}, 1000
+		);
+    });
+    $('#playground').mouseleave(function () {
+        $(this).animate({
+		marginLeft:  100,
+		marginRight: 100,
+	    }, 1000
+	);
+    });
+	
+	    // 陣列、 迴圈、 改變元件屬性 (attribute)
+    var fbpe_i = 0, fbpe_fn = [ "fbpe05.jpg", "fbpe06.jpg",
+        "fbpe07.jpg", "fbpe09b.jpg", "fbpe09c.jpg", "fbpe10.jpg"];
+    $('#fbpe').click(function () {
+        fbpe_i = (fbpe_i + 1) % fbpe_fn.length;
+        $(this).attr("src","../../s/"+fbpe_fn[fbpe_i]);
+    });
+  });
+  </script>
+</head>
+
+<body>
+    <pre id="playground"> </pre>
+
+    <p class="center"><img id="fbpe" alt="facebook 上隱私的逐年流失"
+    title="facebook 上隱私的逐年流失" width="600" src=
+    "https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg" /></p>
+</body>
+</html>
+
